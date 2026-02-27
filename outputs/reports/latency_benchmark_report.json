@@ -1,0 +1,28 @@
+{
+  "num_queries": 60,
+  "topic_model": "/data/xingkun/local_model/Llama-3.2-3B-Instruct",
+  "constraint_model": "outputs/checkpoints/constraint-encoder-v1",
+  "cross_encoder_model": null,
+  "candidate_k": 54,
+  "latency": {
+    "vanilla": {
+      "mean_ms": 179.0840918198228,
+      "p50_ms": 175.75448751449585,
+      "p95_ms": 213.88824470341206,
+      "count": 60
+    },
+    "dual": {
+      "mean_ms": 183.26276571800312,
+      "p50_ms": 180.19784428179264,
+      "p95_ms": 213.29431608319283,
+      "count": 60
+    },
+    "bm25": {
+      "mean_ms": 0.06653089076280594,
+      "p50_ms": 0.06700865924358368,
+      "p95_ms": 0.08906424045562744,
+      "count": 60
+    },
+    "cross_encoder": null
+  }
+}
